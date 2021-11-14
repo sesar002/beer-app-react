@@ -27,8 +27,8 @@ const Beers = ({ filteredBeers }) => {
       {filteredBeers.map((beer) => {
         const { name, description, image_url, abv, isFav, id, tagline } = beer;
         return (
-          <div>
-            <div key={beer.id} className="box">
+          <div key={beer.id}>
+            <div className="box">
               <div className="img-box-shadow">
                 <div
                   style={{

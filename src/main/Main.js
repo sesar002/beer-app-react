@@ -14,7 +14,6 @@ const Main = () => {
     fetch("https://api.punkapi.com/v2/beers")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         const newData = data
           .map((beer) => ({ ...beer, isFav: false }))
           .sort((a, b) => (a.name > b.name ? 1 : -1));

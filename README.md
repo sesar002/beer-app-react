@@ -1,6 +1,6 @@
 ## See preview on gh-pagess link
 
-Link: https://sesar002.github.io/beer-app-react/
+Link: gh-pages currently not working
 
 ## How to set up
 

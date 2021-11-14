@@ -1,7 +1,5 @@
 import React from "react";
 import "../style.scss";
-import { useState } from "react";
-import { FaBars } from "react-icons/fa";
 import Search from "./Filters/Search";
 import RangeComp from "./Filters/RangeComp";
 import Favourites from "./Filters/Favourites";
@@ -18,8 +16,6 @@ const Filters = ({
   searchBeers,
   setSearchBeers,
 }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
   const filterFunc = (arr1, arr2) => {
     let newBeers = [];
 

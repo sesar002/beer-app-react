@@ -25,7 +25,6 @@ const Search = ({
       filterData(newBeers, filteredBeers);
       setSearchPrevValue(inputValue.length);
     } else {
-      console.log(newBeers);
       filterData2(newBeers, cond);
       setSearchPrevValue(inputValue.length);
     }
