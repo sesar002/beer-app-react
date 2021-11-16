@@ -14,15 +14,18 @@ const Main = () => {
     fetch("https://api.punkapi.com/v2/beers")
       .then((res) => res.json())
       .then((data) => {
-        const newData = data
-          .map((beer) => ({ ...beer, isFav: false }))
+        let newData = data
+          .map((beer) =>
+            window.sessionStorage.getItem(beer.id) === beer.name
+              ? { ...beer, isFav: true }
+              : { ...beer, isFav: false }
+          )
           .sort((a, b) => (a.name > b.name ? 1 : -1));
         setSearchBeers(newData);
         setRangeBeers(newData);
         setFilteredBeers(newData);
         setBeersToDisplay(newData);
         setBeers(newData);
-        sessionStorage.clear();
       });
   }, []);
   return (
