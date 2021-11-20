@@ -1,8 +1,8 @@
 import React from "react";
-import Beers from "./Components/Beers";
+import Beers from "./Components/beers/Beers";
 import "./style.scss";
 import { useState, useEffect } from "react";
-import Filters from "./Components/Filters";
+import Filters from "./Components/filters/Filters";
 const Main = () => {
   const [beers, setBeers] = useState([]);
   const [beersToDisplay, setBeersToDisplay] = useState([]);

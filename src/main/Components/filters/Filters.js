@@ -1,9 +1,9 @@
 import React from "react";
-import "../style.scss";
-import Search from "./Filters/Search";
-import RangeComp from "./Filters/RangeComp";
-import Favourites from "./Filters/Favourites";
-import Sort from "./Filters/Sort";
+import "./style.scss";
+import Search from "./Filter-components/Search";
+import RangeComp from "./Filter-components/RangeComp";
+import Favourites from "./Filter-components/Favourites";
+import Sort from "./Filter-components/Sort";
 
 const Filters = ({
   beers,
@@ -42,10 +42,6 @@ const Filters = ({
     } else {
       arr2 = filterFunc(searchBeers, rangeBeers);
     }
-    console.log(searchBeers);
-    console.log(beersToDisplay);
-
-    console.log(arr2);
 
     setFilteredBeers(filterFunc(arr1, arr2));
   };

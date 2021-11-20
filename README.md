@@ -29,7 +29,3 @@ The app will open on localhost:3000
 ## About
 
 When app is started it generates 25 beers. By clicking on the star a beer is added to favourites and if you click on it again it will be removed from favourites. When You hover over the beer a button will be displayed to view details about the beer. There are four filters, search filter that searches beers by name, range filter that filters beers by their alcohol percentage, show only favourites filter and sort filter that gives an option to sort by name or by alcohol percentage.
-
-### Packages used
-
-rc-slider
