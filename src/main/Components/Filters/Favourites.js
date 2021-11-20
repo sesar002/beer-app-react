@@ -6,6 +6,8 @@ const Favourites = ({
   setBeersToDisplay,
   filterData,
   filterData2,
+  setSearchBeers,
+  setRangeBeers,
 }) => {
   const filterFav = () => {
     const newBeers = beers.filter(
@@ -20,6 +22,8 @@ const Favourites = ({
       filterFav();
     } else {
       setBeersToDisplay(beers);
+      setSearchBeers(beers);
+      setRangeBeers(beers);
       filterData2(beers, "");
     }
   };

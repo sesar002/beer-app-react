@@ -42,6 +42,10 @@ const Filters = ({
     } else {
       arr2 = filterFunc(searchBeers, rangeBeers);
     }
+    console.log(searchBeers);
+    console.log(beersToDisplay);
+
+    console.log(arr2);
 
     setFilteredBeers(filterFunc(arr1, arr2));
   };
@@ -68,6 +72,8 @@ const Filters = ({
         filteredBeers={filteredBeers}
         beers={beers}
         setBeersToDisplay={setBeersToDisplay}
+        setSearchBeers={setSearchBeers}
+        setRangeBeers={setRangeBeers}
         filterFunc={filterFunc}
         filterData={filterData}
         filterData2={filterData2}
