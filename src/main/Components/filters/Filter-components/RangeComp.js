@@ -1,5 +1,4 @@
 import React from "react";
-import "rc-slider/assets/index.css";
 import { useState, useRef } from "react";
 import "../style.scss";
 
@@ -17,10 +16,15 @@ const RangeComp = ({
   const [rangeTo, setRangeTo] = useState(100);
   const [rangePrevValue, setRangePrevValue] = useState(0);
 
-  const handleRange = () => {
+  const handleRange = (range) => {
     const cond = "range";
+
     if (rangeTwoRef.current.value - rangeOneRef.current.value <= 0) {
-      rangeOneRef.current.value = rangeTwoRef.current.value - 0;
+      if (range === "one") {
+        rangeOneRef.current.value = rangeTwoRef.current.value;
+      } else {
+        rangeTwoRef.current.value = rangeOneRef.current.value;
+      }
     }
 
     const subPos = rangeTwoRef.current.value - rangeOneRef.current.value;
@@ -47,7 +51,7 @@ const RangeComp = ({
 
   return (
     <div className="range filter-margin">
-      <label>Alcohol content(%):</label>
+      <label>Alcohol content:</label>
       <div className="container">
         <div
           className="slider-track"
@@ -61,7 +65,7 @@ const RangeComp = ({
           max="100"
           value={rangeFrom}
           ref={rangeOneRef}
-          onChange={() => handleRange()}
+          onChange={() => handleRange("one")}
         />
         <input
           type="range"
@@ -69,7 +73,7 @@ const RangeComp = ({
           max="100"
           value={rangeTo}
           ref={rangeTwoRef}
-          onChange={() => handleRange()}
+          onChange={() => handleRange("two")}
         />
       </div>
       <span>

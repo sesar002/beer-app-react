@@ -126,22 +126,26 @@
   border-radius: 5px;
   box-shadow: 0px 0px 32px -3px rgba(0, 0, 0, 0.8);
   position: fixed;
-  width: 270px;
-  top: 50%;
-  left: 50%;
-  margin-top: -250px;
-  margin-left: -135px;
+  width: 500px;
+  height: 500px;
+  left: calc((50vw - 50%) * -1);
+  top: calc((50vh - 50%) * -1);
+  transform: translate(calc(50vw - 50%), calc(50vh - 50%));
   background-color: white;
   z-index: 100;
+  @media screen and (max-width: 600px) {
+    width: 80vw;
+    height: 80vh;
+  }
 }
 
 .pop-up-content {
   background-color: white;
   width: 100%;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   h1 {
     margin: 10px 0;
@@ -151,8 +155,8 @@
   }
   p {
     padding: 5px;
-    height: 150px;
     overflow-y: scroll;
+    height: 150px;
   }
 }
 
