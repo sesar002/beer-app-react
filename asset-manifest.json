@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/beer-app-react/static/css/main.5474c369.chunk.css",
-    "main.js": "/beer-app-react/static/js/main.ab069eff.chunk.js",
-    "main.js.map": "/beer-app-react/static/js/main.ab069eff.chunk.js.map",
+    "main.css": "/beer-app-react/static/css/main.bc5c93e2.chunk.css",
+    "main.js": "/beer-app-react/static/js/main.fc74301e.chunk.js",
+    "main.js.map": "/beer-app-react/static/js/main.fc74301e.chunk.js.map",
     "runtime-main.js": "/beer-app-react/static/js/runtime-main.382bfcd8.js",
     "runtime-main.js.map": "/beer-app-react/static/js/runtime-main.382bfcd8.js.map",
-    "static/js/2.c9737fa4.chunk.js": "/beer-app-react/static/js/2.c9737fa4.chunk.js",
-    "static/js/2.c9737fa4.chunk.js.map": "/beer-app-react/static/js/2.c9737fa4.chunk.js.map",
+    "static/js/2.9e4c9a38.chunk.js": "/beer-app-react/static/js/2.9e4c9a38.chunk.js",
+    "static/js/2.9e4c9a38.chunk.js.map": "/beer-app-react/static/js/2.9e4c9a38.chunk.js.map",
     "index.html": "/beer-app-react/index.html",
-    "static/css/main.5474c369.chunk.css.map": "/beer-app-react/static/css/main.5474c369.chunk.css.map",
-    "static/js/2.c9737fa4.chunk.js.LICENSE.txt": "/beer-app-react/static/js/2.c9737fa4.chunk.js.LICENSE.txt",
+    "static/css/main.bc5c93e2.chunk.css.map": "/beer-app-react/static/css/main.bc5c93e2.chunk.css.map",
+    "static/js/2.9e4c9a38.chunk.js.LICENSE.txt": "/beer-app-react/static/js/2.9e4c9a38.chunk.js.LICENSE.txt",
     "static/media/style.scss": "/beer-app-react/static/media/logo.e7754707.png"
   },
   "entrypoints": [
     "static/js/runtime-main.382bfcd8.js",
-    "static/js/2.c9737fa4.chunk.js",
-    "static/css/main.5474c369.chunk.css",
-    "static/js/main.ab069eff.chunk.js"
+    "static/js/2.9e4c9a38.chunk.js",
+    "static/css/main.bc5c93e2.chunk.css",
+    "static/js/main.fc74301e.chunk.js"
   ]
 }
